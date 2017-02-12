@@ -1,0 +1,29 @@
+border(weight, color)
+	border weight solid color
+	
+animate(time = .25s)
+	-webkit-transition all time ease
+	-moz-transition all time ease
+	-ms-transition all time ease
+	-o-transition all time ease
+	transition all time ease
+	
+snipRotate(degree = 0deg)
+	-webkit-transform rotate(degree)
+	-moz-transform rotate(degree)
+	-ms-transform rotate(degree)
+	-o-transform rotate(degree)
+	transform rotate(degree)
+
+snipScale(scale = 1)
+	-webkit-transform: scale(scale)
+	-moz-transform: scale(scale)
+	-o-transform: scale(scale)
+	-ms-transform: scale(scale)
+	
+centering(maxWidth, margin=0)
+	width 100%
+	max-width maxWidth px
+	margin margin auto
+	padding-left 20px
+	padding-right 20px	
