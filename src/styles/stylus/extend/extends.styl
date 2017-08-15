@@ -1,5 +1,29 @@
-.nav-oneline
+.nav-vertical
 	ul
 		display flex
 	li:not(:last-child)
 		margin-right 1.8em
+
+.btn
+	cursor pointer
+	user-select none
+
+.table
+	width 100%
+	tr
+		border-bottom 1px solid Gray200
+		&:first-child
+			border-bottom 1px solid Gray400
+	th
+		padding 0 5px
+		padding-bottom 5px
+		color Gray700
+		font-size 12px
+		font-weight 500
+		line-height 1em
+	td
+		padding 5px
+		font-size 13px
+	tr:last-child
+		border-bottom none
+		border-top 2px solid Gray200

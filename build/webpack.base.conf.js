@@ -31,7 +31,8 @@ module.exports = {
       'styles': path.resolve(__dirname, '../src/styles'),
       'stylus': path.resolve(__dirname, '../src/styles/stylus'),
       'scripts': path.resolve(__dirname, '../src/scripts'),
-      'models': path.resolve(__dirname, '../src/models')
+      'config': path.resolve(__dirname, '../src/config'),
+      'models': path.resolve(__dirname, '../src/models'),
     }
   },
   resolveLoader: {

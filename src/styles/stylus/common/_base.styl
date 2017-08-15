@@ -2,22 +2,27 @@
 @import "./../variable"
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css)
 
-html, body
-	background-color BgColor
+html
+	height 100%
+	min-height 100%
+body
+	height 100%
+	min-height 100%
 
-body, h1, h2, h3, h4, h5, h6, p, a, span, li, dl, dt, dd, input
-	font-family 'Noto Sans Japanese', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif
-	font-weight 300
-p
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, table, tr, td, th, dl, dt, dd, input
+	font-family 'Hiragino Kaku Gothic Pro', 'Noto Sans Japanese', Helvetica, Arial, sans-serif
+	font-weight 200
 	line-height 1.8em
-	font-size 10.5pt
-	font-weight 300
+	font-weight 200
+	font-size 14px
+	color Gray800
 a
 	text-decoration none
 	color Gray800
 	&:hover
 		color Gray400
-		
+strong
+	font-weight bold
 *
 	webkit-box-sizing border-box
 	-moz-box-sizing border-box

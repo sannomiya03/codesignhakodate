@@ -1,4 +1,4 @@
-setting = require "scripts/site_setting"
+architecture = require "config/architecture"
 
 setRoute = (routes, page, parentURL) ->
 	parentURL += "/"+page.slug
@@ -15,23 +15,23 @@ setRoute = (routes, page, parentURL) ->
 routes = [
 	{
 		path: "/"
-		component: require "components/" + setting.architecture.path
-		name: setting.architecture.name
+		component: require "components/" + architecture.path
+		name: architecture.name
 	}
 	{
 		path: "/404"
-		component: require "components/404/404"
+		component: require "components/pages/404/404"
 		name: "404"
 	}
-	# {
-	# 	path: "*"
-	# 	redirect: { name: "404" }
-	# }
 ]
-for page in setting.architecture.children
+for page in architecture.children
 	setRoute routes, page, "", "components/"+page.path
+routes.push {
+	path: "*"
+	redirect: { name: "404" }
+}
 
 module.exports =
 	mode: "history"
 	routes: routes
-
+	# base: "jssd2017f"
